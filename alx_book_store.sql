@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS
     );
 
 CREATE TABLE IF NOT EXISTS
-    Orders_Details (
+    Order_Details (
         orderdetailid INT PRIMARY KEY,
         order_id INT NOT NULL,
         book_id INT NOT NULL,
