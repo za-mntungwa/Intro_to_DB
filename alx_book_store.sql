@@ -27,6 +27,13 @@ CREATE TABLE IF NOT EXISTS
 
 CREATE TABLE IF NOT EXISTS
     Orders (
+        order_id ,
+        customer_id INT NOT NULL,
+        order_date DATE NOT NULL
+    );
+
+CREATE TABLE IF NOT EXISTS
+    Orders_Details (
         orderdetailid PRIMARY KEY,
         order_id ,
         book_id INT NOT NULL,
